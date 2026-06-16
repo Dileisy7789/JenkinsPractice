@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Build Docker') {
             steps {
-                sh 'docker build -t jenkinspractice:v1 .'
+                sh 'docker build -t jenkinspractice:v1.2 .'
             }
         }
         stage('Run Docker') {
