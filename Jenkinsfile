@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Versión del Docker'){
             steps{
-                docker --version
+                sh 'docker --version'
             }
         }
     }
