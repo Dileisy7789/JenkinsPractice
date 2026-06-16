@@ -7,5 +7,10 @@ pipeline {
                 sh 'cat saludo.txt'
             }
         }
+        stage('Versión del Docker'){
+            steps{
+                docker --version
+            }
+        }
     }
 }
