@@ -12,5 +12,10 @@ pipeline {
                 sh 'docker --version'
             }
         }
+        stage('Build Docker') {
+            steps {
+                sh 'docker build -t jenkinspractice:v1 .'
+            }
+        }
     }
 }
