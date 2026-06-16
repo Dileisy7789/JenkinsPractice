@@ -14,12 +14,12 @@ pipeline {
         }
         stage('Build Docker') {
             steps {
-                sh 'docker build -t jenkinspractice:v1.2 .'
+                sh 'docker build -t jenkinspractice:v1.${BUILD_NUMBER} .'
             }
         }
         stage('Run Docker') {
             steps {
-                sh 'docker run --rm jenkinspractice:v1.2'
+                sh 'docker run --rm jenkinspractice:v1.${BUILD_NUMBER}'
             }
         }
     }
