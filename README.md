@@ -1,3 +1,3 @@
 # JenkinsPractice
 # Other information
-## Jenkins do it!
+## Jenkins do it all!
